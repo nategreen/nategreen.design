@@ -1,0 +1,59 @@
+// Colors
+$dark-blue:      rgb(0, 29, 46);
+$medium-blue:    rgb(0, 90, 142);
+$light-blue:     rgb(164, 196, 215);
+$cold-white:     rgb(242, 246, 249);
+$white:          white;
+$teal:           rgb(0, 143, 123);
+$mint:           rgb(145, 207, 198);
+$gold:           rgb(255, 179, 48);
+$pastel-yellow:  rgb(255, 216, 148);
+$rose:           rgb(255, 0, 64);
+$pink:           rgb(237, 164, 169);
+
+// Typography
+$base-font-size:  100%;
+$base-line-height:  1.5;
+$base-color:           $dark-blue;
+
+// Spacing
+$spacing-xs:    1/4 * 1rem;
+$spacing-sm:    $spacing-xs * 2;
+$spacing-md:    $spacing-sm * 2;
+$spacing-lg:    $spacing-md * 2;
+$spacing-xl:    $spacing-lg * 2;
+
+// Layout
+$site-horizontal-padding:   $spacing-md;
+$site-padding-top:          3rem;
+
+// Site header
+$site-header-height:                3rem;
+$site-header-background-color:      $dark-blue;
+$site-header-color:                 $white;
+$site-header-padding:               $spacing-sm;
+
+$site-header-site-title-font-size:  1.2em;
+
+$site-header-nav-color:             $pastel-yellow;
+$site-header-nav-spacing:           $spacing-lg;
+
+// Projects
+$project-h1-color:                  inherit;
+$project-h2-color:                  $teal;
+
+// Project masthead
+$project-masthead-background-color:  $cold-white;
+$project-masthead-color:             inherit;
+$project-masthead-padding:           $spacing-lg;
+$project-masthead-h1-font-size:      3em;
+$project-masthead-h2-font-size:      1 + 1/2 * 1em;
+$project-masthead-h2-color:          $light-blue;
+
+// Project aside
+$project-aside-margin:               $spacing-md;
+$project-aside-padding:              $spacing-md;
+$project-aside-background-color:     $cold-white;
+$project-aside-color:                inherit;
+$project-aside-min-width:            20ch;
+$project-aside-max-width:            40ch;

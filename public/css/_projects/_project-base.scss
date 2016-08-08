@@ -1,0 +1,25 @@
+.project {
+  > h1, > h2, > h3, > h4, > h5, > h6,
+  > p, > blockquote {
+    padding-left: $site-horizontal-padding;
+    padding-right: $site-horizontal-padding;
+  }
+  
+  > h1, > h2, > h3, > h4, > h5, > h6 {
+    clear: both;
+  }
+  
+  > ul, > ol, > dl {
+    padding-left: calc(#{$site-horizontal-padding} + 1em + 1ch);
+  }
+  
+  h1 {
+    color: $project-h1-color;
+  }
+  
+  h2 {
+    color: $project-h2-color;
+    margin-bottom: 1em;
+  }
+  
+}

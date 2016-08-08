@@ -1,0 +1,7 @@
+block content
+  - for project, slug in public.projects._data
+    .project-card
+      img.project-card__image(src=project["feature-image"], alt=project["feature-image-alt"])
+      h3.project-card__title= project.title
+      p.project-card__summary= project.summary
+      a.button.project-card__cta(href=slug) More about #{ project.title }

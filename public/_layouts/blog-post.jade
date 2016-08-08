@@ -1,0 +1,9 @@
+extends default
+block content
+  article.h-entry
+    header.blog-post-header
+      h1.p-name= title
+      p
+        time.dt-published(datetime=date)= convertDate(date)
+  section.e-content
+    block post-content

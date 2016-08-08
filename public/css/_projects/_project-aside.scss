@@ -1,0 +1,11 @@
+.project-aside {
+  margin-left: $project-aside-margin;
+  margin-right: $project-aside-margin;
+  padding: $project-aside-padding;
+  background-color: $project-aside-background-color;
+  color: $project-aside-color;
+  float: right;
+  width: 50%;
+  min-width: $project-aside-min-width;
+  max-width: $project-aside-max-width;
+}

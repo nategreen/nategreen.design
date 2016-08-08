@@ -1,0 +1,5 @@
+ul
+  for post, slug in public.blog.posts._data
+    li
+      h2
+        a(href="posts/#{ slug }")= post.title

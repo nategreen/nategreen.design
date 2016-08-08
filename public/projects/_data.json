@@ -1,0 +1,12 @@
+{
+  "lunch-money-buddy": {
+    "title": "Lunch Money Buddy",
+    "subtitle": "Interaction Design & Prototyping",
+    "tags": ["prototyping", "Axure", "wireframing", "blueprinting", "interaction design"],
+    "date": "2016-05-31",
+    "category": "interaction-design",
+    "summary": "During my interaction design class at KSU, I designed the user interface for a fictitious mobile app called Lunch Money Buddy, which helps parents or guardians of schoolchildren manage the kids' lunch money.",
+    "feature-image": "\/projects/images/lunch-money-buddy-screens.jpg",
+    "feature-image-alt": "Screenshots from the Lunch Money Buddy interactive prototype"
+  }
+}

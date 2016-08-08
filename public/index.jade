@@ -1,0 +1,37 @@
+extends _layouts/default
+block content
+
+  //- Convert dates to MMM DD, YYYY format
+  //- https://ines.io/blog/the-ultimate-guide-static-websites-harp-jade
+
+  -  function convertDate(input) {
+  -    var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+  -    var date = new Date(input);
+  -    return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+  -  }
+
+  section.masthead
+    h1 Nate Green
+    h2 User Experience Designer
+  section.featured-work
+    h2 Featured project
+    .project-card
+      - var project = public.projects._data["lunch-money-buddy"]
+      img.project-card__image(src=project["feature-image"], alt=project["feature-image-alt"])
+      h3.project-card__title= project.title
+      p.project-card__summary= project.summary
+      a.button.project-card__cta(href="projects/lunch-money-buddy") More about #{ project.title }
+    a(href="projects") All projects
+  section.recent-posts
+    h2 Recent blog posts
+    nav.tiles
+      - var i = 0
+      - for post, slug in public.blog.posts._data
+        - i++
+        - if ( i <= 3 )
+          .tile
+            a(href="blog/posts/#{ slug }")
+              h3.tile__title #{ post.title }
+              p.tile__description #{ post.excerpt }
+              span.tile__date Published 
+                time.dt-published(datetime=post.date)= convertDate(post.date)
