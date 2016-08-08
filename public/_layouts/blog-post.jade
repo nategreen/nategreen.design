@@ -4,6 +4,14 @@ block content
     header.blog-post-header
       h1.p-name= title
       p
+        //- Convert dates to MMM DD, YYYY format
+        //- https://ines.io/blog/the-ultimate-guide-static-websites-harp-jade
+        
+        -  function convertDate(input) {
+        -    var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        -    var date = new Date(input);
+        -    return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+        -  }
         time.dt-published(datetime=date)= convertDate(date)
   section.e-content
     block post-content
