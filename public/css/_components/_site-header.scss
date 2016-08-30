@@ -1,5 +1,6 @@
 .site-header {
   display: flex;
+  
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: space-between;
@@ -13,6 +14,11 @@
   padding-left: $site-horizontal-padding;
   padding-right: $site-horizontal-padding;
   white-space: nowrap;
+  
+  @media screen and (min-width: 80ch) {
+    padding-right: calc(1/7 * 100%);
+    padding-left: calc(1/7 * 100%);
+  }
 }
 
 .site-header__site-title {

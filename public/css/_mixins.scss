@@ -1,7 +1,6 @@
 @mixin link-reset() {
   color: inherit;
   text-decoration: none;
-  
 }
 
 @mixin list-reset() {
@@ -11,5 +10,11 @@
   li {
     padding: 0;
     margin: 0;
+  }
+}
+
+@mixin breakpoint($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
   }
 }

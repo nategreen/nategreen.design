@@ -5,6 +5,11 @@
   padding-left: $site-horizontal-padding;
   padding-right: $site-horizontal-padding;
   border-top: 1px solid transparent; // Don't let the h1's margin escape
+  
+  @media screen and (min-width: 80ch) {
+    padding-left: calc(1/7 * 100%);
+    padding-right: calc(1/7 * 100%);
+  }
 }
 
 .project-masthead h1 {

@@ -1,11 +1,24 @@
 .project-aside {
-  margin-left: $project-aside-margin;
-  margin-right: $project-aside-margin;
   padding: $project-aside-padding;
   background-color: $project-aside-background-color;
   color: $project-aside-color;
-  float: right;
-  width: 50%;
-  min-width: $project-aside-min-width;
-  max-width: $project-aside-max-width;
+  
+  width: 100%;
+  margin-top: $project-aside-margin;
+  margin-bottom: $project-aside-margin;
+  
+  @media screen and (min-width: 80ch) {
+    width: calc(2/7 * 100%);
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: $project-aside-margin;
+    margin-right: calc(1/7 * 100%);
+  }
+}
+
+.project-aside {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $project-aside-heading-margin-top;    
+  }
 }
