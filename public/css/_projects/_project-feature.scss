@@ -1,6 +1,6 @@
 .project-feature {
   background-color: $project-feature-background-color;
-  padding: $project-feature-padding $site-horizontal-padding;
+  padding: $project-feature-padding 0;
   margin-top: $project-feature-margin;
   
   &::after {
@@ -20,9 +20,8 @@
 .project-feature__figure--left {
   width: 100%;
   
-  @media screen and (min-width: 80ch) {
+  @media screen and (min-width: 100ch) {
     width: calc(4/7 * 100%);
-    
   }
   
   height: auto;
@@ -37,25 +36,33 @@
 
 .project-feature__figure--right {
   float: right;
-  margin: $project-feature-image-margin 0 $project-feature-image-margin $project-feature-image-margin;
+  margin: $project-feature-image-margin;
 }
 
 .project-feature__figure--left {
   float: left;
-  margin: $project-feature-image-margin $project-feature-image-margin $project-feature-image-margin 0;
+  margin: $project-feature-image-margin;
 }
 
 .project-feature__content--left,
 .project-feature__content--right {
   width: 100%;
+  position: sticky;
+  top: 4rem;
   
-  @media screen and (min-width: 80ch) {
+  @media screen and (min-width: 100ch) {
     width: calc(2/7 * 100%);
   }
 }
 
 .project-feature__content--left {
-  @media screen and (min-width: 80ch) {
+  @media screen and (min-width: 100ch) {
     margin-left: calc(1/7 * 100%);
+  }
+}
+
+.project-feature__content--right {
+  @media screen and (min-width: 100ch) {
+    margin-right: calc(1/7 * 100%);
   }
 }

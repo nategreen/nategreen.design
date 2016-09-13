@@ -1,5 +1,5 @@
 .project-aside {
-  padding: $project-aside-padding;
+  padding: $project-aside-padding $site-horizontal-padding;
   background-color: $project-aside-background-color;
   color: $project-aside-color;
   
@@ -7,9 +7,10 @@
   margin-top: $project-aside-margin;
   margin-bottom: $project-aside-margin;
   
-  @media screen and (min-width: 80ch) {
+  @media screen and (min-width: 100ch) {
     width: calc(2/7 * 100%);
     float: right;
+    padding: $project-aside-padding;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: $project-aside-margin;

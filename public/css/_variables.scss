@@ -29,7 +29,7 @@ $spacing-xl:    $spacing-lg * 2;
 $border-radius:  1/4 * 1rem;
 
 // Layout
-$site-horizontal-padding:   $spacing-md;
+$site-horizontal-padding:   $spacing-lg * 2;
 $site-padding-top:          3rem;
 
 // Links
@@ -67,6 +67,10 @@ $site-header-site-title-font-size:  1.2em;
 
 $site-header-nav-color:             $pastel-yellow;
 $site-header-nav-spacing:           $spacing-lg;
+
+// Site footer
+
+$site-footer-padding:               $spacing-lg;
 
 // Projects
 $project-h1-color:                  inherit;
@@ -110,3 +114,5 @@ $project-cta-padding:                $spacing-lg;
 $project-cta-heading-color:          $rose;
 $project-cta-heading-margin:         0 0 $spacing-md;
 
+// Z-index
+$site-header-z-index:                10;
